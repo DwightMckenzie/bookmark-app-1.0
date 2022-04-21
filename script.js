@@ -27,9 +27,6 @@ function validate(nameValue, urlValue) {
     alert('please submit values for both fields');
     return false;
   }
-  // if (urlValue.match(regex)) {
-  //   alert('match');
-  // }
   if (!urlValue.match(regex)) {
     alert('Please provide valid web address');
     return false;
@@ -88,10 +85,6 @@ function fetchBookmarks() {
         name: 'Dwight Mckenzie',
         url: 'https://dwightmckenzie.com' 
       }
-      // < link rel = "icon"
-      // type = "image/png"
-      // sizes = "32x32"
-      // href = "/favicon-32x32.png" >
     ];
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   }
